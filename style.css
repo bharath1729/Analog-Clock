@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+    body{
+      display: flex;
+      
+      background-color: green;
+    }
+      .main{
+      --h: calc(40vw + 40vh);
+      margin: auto;
+      margin-top: calc(50vh - calc(var(--h) / 2));
+      background-color: goldenrod;
+      width: var(--h);
+      height: var(--h);
+      border-radius: 50%;
+      position: relative;
+      border: 2px solid black;
+    }
+      
+
+    .center{
+        height: 5%;
+        width: 5%;
+        background-color: black;
+        position: absolute;
+        top:47.5%;
+        right:47.5%;
+        border-radius: 50%;
+    }
+      .num{
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        font-size: 2em;
+     }
+
+     #hr{
+       position: absolute;
+       background-color: black;
+       width: 1%;
+       height: 25%;
+       top:25%;
+       right: 49.5%;
+       transform-origin: bottom;
+     }
+
+     #min{
+        position: absolute;
+        background-color: black;
+        width: 0.6%;
+        height: 35%;
+        top:15%;
+        right: 49.70%;
+        transform-origin: bottom;
+    }
+    
+    #sec{
+        position: absolute;
+        background-color: black;
+        width: 0.4%;
+        height: 40%;
+        top:10%;
+        right: 49.3%;
+        transform-origin: bottom;
+      }
+
+     .num1{
+         transform: rotate(30deg);
+     }
+     .num2{
+        transform: rotate(60deg);
+    }
+    
+    .num3{
+        transform: rotate(90deg);
+    }
+    
+    .num4{
+        transform: rotate(120deg);
+    }
+    
+
+    .num5{
+         transform: rotate(150deg);
+     }
+     
+     .num6{
+         transform: rotate(180deg);
+     }
+     
+     .num7{
+        transform: rotate(210deg);
+    }
+    
+    .num8{
+         transform: rotate(240deg);
+     }
+     .num9{
+        transform: rotate(270deg);
+    }
+    .num10{
+        transform: rotate(300deg);
+    }
+    .num11{
+        transform: rotate(330deg);
+    }
+
+    
+    @media screen and (max-width:500px) , screen and (max-height:500px){
+        .main{
+            /* display: none; */
+            --h:0px;
+        }
+    }
+
+
+
+     @media screen and (max-width:700px) , screen and (max-height:700px){
+        .main{
+            --h:300px;
+        }
+    }
+
+    @media screen and (min-width:700px)and(max-width:1000px),screen and (min-height:700px)and(max-height:1000px){
+        .main{
+            --h:500px;
+        }
+    }
+
+    @media screen and (min-width:1000px),screen and (min-height:1000px){
+        .main{
+            --h:600px;
+        }
+    }
+
+   
+    
+     
+    
+    
+
+    
+
